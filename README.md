@@ -1,13 +1,13 @@
 <img src="https://raw.githubusercontent.com/dgcole/react-icons-refresh/master/react-icons.svg" width="120" alt="React Icons">
 
-# [React Icons](https://react-icons-refresh.github.io/react-icons-refresh)
+# [React Icons Refresh](https://react-icons-refresh.dgcole.github.io/react-icons-refresh)
 
 [![npm][npm-image]][npm-url]
 
 [npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-icons-refresh
 
-Include popular icons in your React projects easily with `react-icons-refresh`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+This is a fork of the [react-icons](https://github.com/react-icons/react-icons) project, with updated icon libraries. It was created due to long delays waiting for the `react-icons` maintainers to incorporate icon library updates.
 
 ## Installation (for standard modern project)
 
