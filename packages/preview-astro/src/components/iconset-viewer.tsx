@@ -1,5 +1,5 @@
 import React from "react";
-import { getIcons } from "virtual:react-icons-get-icons";
+import { getIcons } from "virtual:react-icons-refresh-get-icons";
 import Icon from "./icon";
 import { IconDetailModal } from "./icondetailmodal";
 

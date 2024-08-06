@@ -6,8 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        - For questions, ask in [Discussions](https://github.com/react-icons/react-icons/discussions/categories/q-a)
-        - Please check if there is already a similar issue. [Issues](https://github.com/react-icons/react-icons/issues)
+        - For questions, ask in [Discussions](https://github.com/dgcole/react-icons-refresh/discussions/categories/q-a)
+        - Please check if there is already a similar issue. [Issues](https://github.com/dgcole/react-icons-refresh/issues)
   - type: textarea
     id: describe
     attributes:
@@ -46,7 +46,7 @@ body:
     id: package-version
     attributes:
       label: Package version
-      description: The version of react-icons used in the project
+      description: The version of react-icons-refresh used in the project
       placeholder: "vX.Y.Z"
     validations:
       required: true

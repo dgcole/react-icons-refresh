@@ -21,10 +21,10 @@ export function useSearch(): UseSearchValue {
 
   const setQuery = React.useCallback((query: string) => {
     const history =
-      globalThis.window?.location?.pathname === "/react-icons/search/"
+      globalThis.window?.location?.pathname === "/react-icons-refresh/search/"
         ? "replace"
         : "push";
-    navigate(`/react-icons/search/#q=${query}`, { history });
+    navigate(`/react-icons-refresh/search/#q=${query}`, { history });
     searchWord.set(query);
   }, []);
 

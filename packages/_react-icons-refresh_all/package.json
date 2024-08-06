@@ -1,5 +1,5 @@
 {
-  "name": "react-icons",
+  "name": "react-icons-refresh",
   "version": "5.2.1",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "author": "Goran Gajic",
@@ -13,12 +13,12 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:react-icons/react-icons.git"
+    "url": "git+ssh://git@github.com:dgcole/react-icons-refresh.git"
   },
   "bugs": {
-    "url": "https://github.com/react-icons/react-icons/issues"
+    "url": "https://github.com/dgcole/react-icons-refresh/issues"
   },
-  "homepage": "https://github.com/react-icons/react-icons#readme",
+  "homepage": "https://github.com/dgcole/react-icons-refresh#readme",
   "peerDependencies": {
     "react": "*"
   },

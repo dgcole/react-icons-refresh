@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import { IconContext } from "react-icons";
-import { FaBeer } from "react-icons/fa";
+import { IconContext } from "react-icons-refresh";
+import { FaBeer } from "react-icons-refresh/fa";
 
 const App: React.FC = () => {
   return (

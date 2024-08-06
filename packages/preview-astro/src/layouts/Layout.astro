@@ -7,7 +7,7 @@ interface Props {
 
 const { title, noindex, activeIconSet } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
-import { IconsManifest } from "react-icons";
+import { IconsManifest } from "react-icons-refresh";
 import BrandIcon from "./icon.astro";
 import { SearchInput } from "../components/searchinput";
 
@@ -22,15 +22,15 @@ const sortedManifest = IconsManifest.sort((a, b) =>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    <link rel="shortcut icon" href="/react-icons/favicon.png" />
+    <link rel="shortcut icon" href="/react-icons-refresh/favicon.png" />
     <meta name="theme-color" content="#e91e63" />
     <meta name="title" content="React Icons" />
     <meta
       name="description"
-      content="Include popular icons in your React projects easly with react-icons."
+      content="Include popular icons in your React projects easly with react-icons-refresh."
     />
     <meta name="keywords" content="React, Icons, Tree Shaking, SVG" />
-    <link rel="manifest" href="/react-icons/manifest.json" />
+    <link rel="manifest" href="/react-icons-refresh/manifest.json" />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
     <ViewTransitions />
   </head>
@@ -38,9 +38,9 @@ const sortedManifest = IconsManifest.sort((a, b) =>
     <div transition:name="sidebar" transition:persist class="sidebar pt3">
       <!-- <Heading isOpen={isOpen} setIsOpen={setIsOpen} /> -->
       <div class="brand">
-        <a href="/react-icons/">
+        <a href="/react-icons-refresh/">
           <BrandIcon />
-          <span>react-icons</span>
+          <span>react-icons-refresh</span>
         </a>
         <div class="brand--navmenu">
           <!-- <button class={`menu ${isOpen && "active"}`} onClick={toggleMenu}> -->
@@ -58,14 +58,14 @@ const sortedManifest = IconsManifest.sort((a, b) =>
       <ul class="sidebar--links">
         <li>
           <!-- <ActiveLink href="/"> -->
-          <a class="rounded px2 py1" href="/react-icons/">Home</a>
+          <a class="rounded px2 py1" href="/react-icons-refresh/">Home</a>
           <!-- </ActiveLink> -->
         </li>
         {
           sortedManifest.map((icon) => (
             <li>
               <a
-                href={`/react-icons/icons/${icon.id}/`}
+                href={`/react-icons-refresh/icons/${icon.id}/`}
                 class={`rounded px2 py1${
                   activeIconSet === icon.id ? " active" : ""
                 }`}

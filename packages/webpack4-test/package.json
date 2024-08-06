@@ -5,7 +5,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "test": "yarn build:simple && yarn build:edit-resolve",
+    "test": "pnpm build:simple && pnpm build:edit-resolve",
     "build:simple": "webpack --config webpack.config.simple.js",
     "build:edit-resolve": "webpack --config webpack.config.edit-resolve.js"
   },
@@ -14,6 +14,6 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "react-icons": "^5.2.1"
+    "react-icons-refresh": "^5.2.1"
   }
 }

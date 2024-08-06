@@ -1,4 +1,4 @@
-# react-icons demo
+# react-icons-refresh demo
 
 ## how to develop
 

@@ -1,8 +1,8 @@
 import React from "react";
 
 import SearchPageIconLoading from "./loading";
-import { getIcons } from "virtual:react-icons-get-icons";
-import type { IconManifestType } from "react-icons";
+import { getIcons } from "virtual:react-icons-refresh-get-icons";
+import type { IconManifestType } from "react-icons-refresh";
 import Icon from "../icon";
 
 export interface SearchIconsProps {

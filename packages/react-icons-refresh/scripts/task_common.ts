@@ -101,7 +101,10 @@ export async function writeIconVersions({ DIST, LIB, rootDir }: TaskContext) {
     const packageJson = findPackage(firstDir, true);
 
     let version: string;
-    if (packageJson.version && !packageJson.name.includes("react-icons")) {
+    if (
+      packageJson.version &&
+      !packageJson.name.includes("react-icons-refresh")
+    ) {
       version = packageJson.version;
     } else {
       const { stdout } = await exec(
@@ -185,13 +188,13 @@ export async function buildLib({ DIST, LIB, rootDir }: TaskContext) {
     cwd: rootDir,
   };
   await Promise.all([
-    exec("yarn tsc", execOpt),
+    exec("pnpm tsc", execOpt),
     exec(
-      "yarn babel --config-file ./babel.config.esm.json      --extensions=.ts,.tsx ./src --ignore '**/icons/*' --ignore '**/*.d.ts' --out-dir ./build/lib --out-file-extension .mjs",
+      "pnpm babel --config-file ./babel.config.esm.json      --extensions=.ts,.tsx ./src --ignore '**/icons/*' --ignore '**/*.d.ts' --out-dir ./build/lib --out-file-extension .mjs",
       execOpt,
     ),
     exec(
-      "yarn babel --config-file ./babel.config.commonjs.json --extensions=.ts,.tsx ./src --ignore '**/icons/*' --ignore '**/*.d.ts' --out-dir ./build/lib --out-file-extension .js ",
+      "pnpm babel --config-file ./babel.config.commonjs.json --extensions=.ts,.tsx ./src --ignore '**/icons/*' --ignore '**/*.d.ts' --out-dir ./build/lib --out-file-extension .js ",
       execOpt,
     ),
   ]);

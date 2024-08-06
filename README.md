@@ -1,26 +1,26 @@
-<img src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg" width="120" alt="React Icons">
+<img src="https://raw.githubusercontent.com/dgcole/react-icons-refresh/master/react-icons.svg" width="120" alt="React Icons">
 
-# [React Icons](https://react-icons.github.io/react-icons)
+# [React Icons](https://react-icons-refresh.github.io/react-icons-refresh)
 
 [![npm][npm-image]][npm-url]
 
 [npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/react-icons
+[npm-url]: https://www.npmjs.com/package/react-icons-refresh
 
-Include popular icons in your React projects easily with `react-icons`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+Include popular icons in your React projects easily with `react-icons-refresh`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
 ## Installation (for standard modern project)
 
 ```bash
-yarn add react-icons
+yarn add react-icons-refresh
 # or
-npm install react-icons --save
+npm install react-icons-refresh --save
 ```
 
 example usage
 
 ```jsx
-import { FaBeer } from "react-icons/fa";
+import { FaBeer } from "react-icons-refresh/fa";
 
 function Question() {
   return (
@@ -31,29 +31,29 @@ function Question() {
 }
 ```
 
-[View the documentation](https://react-icons.github.io/react-icons) for further usage examples and how to use icons from other packages. _NOTE_: each Icon package has it's own subfolder under `react-icons` you import from.
+[View the documentation](https://react-icons-refresh.github.io/react-icons-refresh) for further usage examples and how to use icons from other packages. _NOTE_: each Icon package has it's own subfolder under `react-icons-refresh` you import from.
 
-For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-icons/md';`
+For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-icons-refresh/md';`
 
 ## Installation (for meteorjs, gatsbyjs, etc)
 
 > **Note**
 > This option has not had a new release for some time.
-> More info https://github.com/react-icons/react-icons/issues/593
+> More info https://github.com/dgcole/react-icons-refresh/issues/593
 
 If your project grows in size, this option is available.
 This method has the trade-off that it takes a long time to install the package.
 
 ```bash
-yarn add @react-icons/all-files
+yarn add @react-icons-refresh/all-files
 # or
-npm install @react-icons/all-files --save
+npm install @react-icons-refresh/all-files --save
 ```
 
 example usage
 
 ```jsx
-import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { FaBeer } from "@react-icons-refresh/all-files/fa/FaBeer";
 
 function Question() {
   return (
@@ -96,7 +96,7 @@ function Question() {
 | [VS Code Icons](https://github.com/microsoft/vscode-codicons)           | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)                                         | 0.0.35                                   |   461 |
 | [Tabler Icons](https://github.com/tabler/tabler-icons)                  | [MIT](https://opensource.org/licenses/MIT)                                                        | 3.2.0                                    |  5237 |
 | [Themify Icons](https://github.com/lykmapipo/themify-icons)             | [MIT](https://github.com/thecreation/standard-icons/blob/master/modules/themify-icons/LICENSE)    | v0.1.2-2-g9600186                        |   352 |
-| [Radix Icons](https://icons.radix-ui.com)                               | [MIT](https://github.com/radix-ui/icons/blob/master/LICENSE)                                      | @radix-ui/react-icons@1.3.0-1-g94b3fcf   |   318 |
+| [Radix Icons](https://icons.radix-ui.com)                               | [MIT](https://github.com/radix-ui/icons/blob/master/LICENSE)                                      | @radix-ui/react-icons-refresh@1.3.0-1-g94b3fcf   |   318 |
 | [Phosphor Icons](https://github.com/phosphor-icons/core)                | [MIT](https://github.com/phosphor-icons/core/blob/main/LICENSE)                                   | 2.1.1                                    |  9072 |
 | [Icons8 Line Awesome](https://icons8.com/line-awesome)                  | [MIT](https://github.com/icons8/line-awesome/blob/master/LICENSE.md)                              | 1.3.1                                    |  1544 |
 
@@ -104,12 +104,12 @@ You can add more icons by submitting pull requests or creating issues.
 
 ## Configuration
 
-You can configure react-icons props using [React Context API](https://reactjs.org/docs/context.html).
+You can configure react-icons-refresh props using [React Context API](https://reactjs.org/docs/context.html).
 
 _Requires **React 16.3** or higher._
 
 ```jsx
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons-refresh";
 
 <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
   <div>
@@ -135,7 +135,7 @@ Import path has changed. You need to rewrite from the old style.
 
 ```jsx
 // OLD IMPORT STYLE
-import FaBeer from "react-icons/lib/fa/beer";
+import FaBeer from "react-icons-refresh/lib/fa/beer";
 
 function Question() {
   return (
@@ -148,7 +148,7 @@ function Question() {
 
 ```jsx
 // NEW IMPORT STYLE
-import { FaBeer } from "react-icons/fa";
+import { FaBeer } from "react-icons-refresh/fa";
 
 function Question() {
   return (
@@ -159,7 +159,7 @@ function Question() {
 }
 ```
 
-Ending up with a large JS bundle? Check out [this issue](https://github.com/react-icons/react-icons/issues/154).
+Ending up with a large JS bundle? Check out [this issue](https://github.com/dgcole/react-icons-refresh/issues/154).
 
 ### Adjustment CSS
 
@@ -176,31 +176,31 @@ From version 3, `vertical-align: middle` is not automatically given. Please use 
 Component
 
 ```tsx
-<IconContext.Provider value={{ className: 'react-icons' }}>
+<IconContext.Provider value={{ className: 'react-icons-refresh' }}>
 ```
 
 CSS
 
 ```css
-.react-icons {
+.react-icons-refresh {
   vertical-align: middle;
 }
 ```
 
 ### TypeScript native support
 
-Dependencies on `@types/react-icons` can be deleted.
+Dependencies on `@types/react-icons-refresh` can be deleted.
 
 #### Yarn
 
 ```bash
-yarn remove @types/react-icons
+yarn remove @types/react-icons-refresh
 ```
 
 #### NPM
 
 ```bash
-npm remove @types/react-icons
+npm remove @types/react-icons-refresh
 ```
 
 ## Contributing
@@ -211,7 +211,7 @@ npm remove @types/react-icons
 
 ```bash
 yarn
-cd packages/react-icons
+cd packages/react-icons-refresh
 yarn fetch  # fetch icon sources
 yarn build
 ```
@@ -220,21 +220,21 @@ yarn build
 
 First, check the discussion to see if anyone would like to add an icon set.
 
-https://github.com/react-icons/react-icons/discussions/categories/new-icon-set
+https://github.com/dgcole/react-icons-refresh/discussions/categories/new-icon-set
 
 The SVG files to be fetched are managed in this file. Edit this file and run `yarn fetch && yarn check && yarn build`.
 
-https://github.com/react-icons/react-icons/blob/master/packages/react-icons/src/icons/index.ts
+https://github.com/dgcole/react-icons-refresh/blob/master/packages/react-icons-refresh/src/icons/index.ts
 
 ### Preview
 
 > **Note**
 > The project is not actively accepting PR for the preview site at this time.
 
-The preview site is the [`react-icons`](https://react-icons.github.io/react-icons/) website, built in Astro+React.
+The preview site is the [`react-icons-refresh`](https://react-icons-refresh.github.io/react-icons-refresh/) website, built in Astro+React.
 
 ```bash
-cd packages/react-icons
+cd packages/react-icons-refresh
 yarn fetch
 yarn build
 
@@ -244,10 +244,10 @@ yarn start
 
 ### Demo
 
-The demo is a [Create React App](https://create-react-app.dev/) boilerplate with `react-icons` added as a dependency for easy testing.
+The demo is a [Create React App](https://create-react-app.dev/) boilerplate with `react-icons-refresh` added as a dependency for easy testing.
 
 ```bash
-cd packages/react-icons
+cd packages/react-icons-refresh
 yarn fetch
 yarn build
 
@@ -257,7 +257,7 @@ yarn start
 
 ## Why React SVG components instead of fonts?
 
-SVG is [supported by all major browsers](http://caniuse.com/#search=svg). With `react-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
+SVG is [supported by all major browsers](http://caniuse.com/#search=svg). With `react-icons-refresh`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
 
 ## Related Projects
 

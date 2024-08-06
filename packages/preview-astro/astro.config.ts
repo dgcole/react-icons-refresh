@@ -1,11 +1,11 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 import type { PluginOption } from "vite";
-import { IconsManifest } from "react-icons/lib";
+import { IconsManifest } from "react-icons-refresh/lib";
 
 // https://astro.build/config
 export default defineConfig({
-  base: "/react-icons",
+  base: "/react-icons-refresh",
   trailingSlash: "always",
   integrations: [react()],
   vite: {
@@ -14,11 +14,11 @@ export default defineConfig({
 });
 
 function reactIconsGetIconsPlugin(): PluginOption {
-  const virtualModuleId = "virtual:react-icons-get-icons";
+  const virtualModuleId = "virtual:react-icons-refresh-get-icons";
   const resolvedVirtualModuleId = "\0" + virtualModuleId;
 
   return {
-    name: "react-icons-get-icons-plugin",
+    name: "react-icons-refresh-get-icons-plugin",
     resolveId(id) {
       if (id === virtualModuleId) {
         return resolvedVirtualModuleId;
@@ -29,7 +29,7 @@ function reactIconsGetIconsPlugin(): PluginOption {
       if (id === resolvedVirtualModuleId) {
         let codes = "export function getIcons (id) { switch (id) {";
         for (const icon of IconsManifest) {
-          codes += `case "${icon.id}":\nreturn import("react-icons/${icon.id}");\n`;
+          codes += `case "${icon.id}":\nreturn import("react-icons-refresh/${icon.id}");\n`;
         }
         codes += "}};";
 

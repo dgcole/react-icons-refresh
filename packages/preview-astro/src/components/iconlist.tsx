@@ -1,6 +1,6 @@
 import React from "react";
-import { IconsManifest } from "react-icons";
-import { getIcons } from "virtual:react-icons-get-icons";
+import { IconsManifest } from "react-icons-refresh";
+import { getIcons } from "virtual:react-icons-refresh-get-icons";
 
 const icons = [...IconsManifest].sort((a, b) => a.name.localeCompare(b.name));
 
@@ -31,7 +31,7 @@ export function IconList(): React.ReactElement {
           <a
             key={icons.id}
             className="icon-set"
-            href={`/react-icons/icons/${icons.id}/`}
+            href={`/react-icons-refresh/icons/${icons.id}/`}
           >
             <div className="name">{icons.name}</div>
             <div className="describe">
