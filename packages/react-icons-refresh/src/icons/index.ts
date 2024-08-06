@@ -177,7 +177,7 @@ export const icons: IconDefinition[] = [
       remoteDir: "src/",
       url: "https://github.com/google/material-design-icons.git",
       branch: "master",
-      hash: "9beae745bb758f3ad56654fb377ea5cf62be4915",
+      hash: "5a1798b9e2cc0498d2e8a89378adc06d02fa5e66",
     },
   },
   {
