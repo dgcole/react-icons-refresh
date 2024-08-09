@@ -60,8 +60,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons-refresh:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.2.2
+        version: 5.2.2(react@18.3.1)
       react-scripts:
         specifier: ^5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.24.7(@babel/core@7.25.2))(@babel/plugin-transform-react-jsx@7.25.2(@babel/core@7.25.2))(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.77.8)(type-fest@2.19.0)(typescript@5.4.5)
@@ -85,8 +85,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons-refresh:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.2.2
+        version: 5.2.2(react@18.3.1)
       react-scripts:
         specifier: ^5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.24.7(@babel/core@7.25.2))(@babel/plugin-transform-react-jsx@7.25.2(@babel/core@7.25.2))(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.77.8)(type-fest@2.19.0)(typescript@5.4.5)
@@ -134,8 +134,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons-refresh:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.2.2
+        version: 5.2.2(react@18.3.1)
       sass:
         specifier: ^1.69.5
         version: 1.77.8
@@ -246,8 +246,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-icons-refresh:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.2.2
+        version: 5.2.2(react@18.3.1)
       react-scripts:
         specifier: 5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.24.7(@babel/core@7.25.2))(@babel/plugin-transform-react-jsx@7.25.2(@babel/core@7.25.2))(@types/babel__core@7.20.5)(eslint@8.57.0)(react@18.3.1)(sass@1.77.8)(type-fest@2.19.0)(typescript@5.4.5)
@@ -258,8 +258,8 @@ importers:
   packages/webpack4-test:
     dependencies:
       react-icons-refresh:
-        specifier: ^5.2.1
-        version: 5.2.1(react@18.3.1)
+        specifier: ^5.2.2
+        version: 5.2.2(react@18.3.1)
     devDependencies:
       webpack:
         specifier: ^5.74.0
@@ -7198,8 +7198,8 @@ packages:
   react-error-overlay@6.0.11:
     resolution: {integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==}
 
-  react-icons-refresh@5.2.1:
-    resolution: {integrity: sha512-xYqBuR9TPkUGTocYd6dvyAduAOKFKvUMGAms9ydKl+ARVv0Sl4G2TNu+m02O4uYK3v8zR73GcoHSbhtinD7dtg==}
+  react-icons-refresh@5.2.2:
+    resolution: {integrity: sha512-9Sk1TdrYdRLP+ULhcfm/V1TrH1rkh1K3bpB0SAyeK3Nn8ojQFhgQfZBUXgzFlD+FnpaXRC3BgKvu3AAt74x83A==}
     peerDependencies:
       react: '*'
 
@@ -17471,7 +17471,7 @@ snapshots:
 
   react-error-overlay@6.0.11: {}
 
-  react-icons-refresh@5.2.1(react@18.3.1):
+  react-icons-refresh@5.2.2(react@18.3.1):
     dependencies:
       react: 18.3.1
 

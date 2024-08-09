@@ -4,7 +4,7 @@
 
 [![npm][npm-image]][npm-url]
 
-[npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/react-icons-refresh.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/react-icons-refresh
 
 This is a fork of the [react-icons](https://github.com/react-icons/react-icons) project, with updated icon libraries. It was created due to long delays waiting for the `react-icons` maintainers to incorporate icon library updates.
